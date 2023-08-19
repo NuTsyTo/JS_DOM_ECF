@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemple DOM</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="le_DOM.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">Bienvenue sur mon site</h1>
+    </header>
+    <main>
+        <p>Ceci est un exemple de page web.</p>
+        <p>Le bouton va changer le texte du H1 et sa couleur lorsqu'on va
+cliquer dessus</p>
+        <button id="change-text">Changer le texte</button>
+        <br>
+        <h1 id="title">Titre Principal</h1>
+        <div class="container">
+            <p>Paragraphe 1</p>
+            <p>Paragraphe 2</p>
+        </div>
+        <ul class="list">
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+            <li>Élément 3</li>
+        </ul>
+        <button id="myButton">Cliquez-moi</button>
+
+        <p id="myParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quam.
+        </p>
+        <button id="recup-text">Obtenir le contenu</button>
+
+        <p id="myParagraph2">Contenu initial</p>
+        <button id="myButton2"> Modifier le contenu</button>
+
+<!-- Exercice 1 Modification de texte-->
+        <p id="myText"> Bonjour je m'appel NuTs </p>
+        <button id="affiche-text">Afficher le texte</button>
+
+        <p id="text-souligne"><u>Bonjour je m'appel NuTs</u></p>
+        <button id="modif-text">Modifier le texte</button>
+        
+<!-- Exercice 2 Modification de div-->
+        <br>
+        <br>
+        <div id="myDiv">Je suis un texte dans une div
+        <br>
+        <button id="modif-div">Appliquer le style</button>
+        </div>
+
+<!-- Exercice input bouton invisible -->
+        <br>
+        <input type="text" id="myInput" placeholder="Entrez votre prénom">
+        <button id="submitButton" hidden> Soumettre</button>
+
+<!-- Exercice sur les évèvenements -->
+        <h2> Exercice Évènement</h2>
+    <!-- Exercice 1 -->
+        <h3> Exercice 1, clic sur élèment</h3>
+        <button id="button1"> Cliquer ici</button>
+
+    <!-- Exercice 2 -->
+        <h3> Exercice 2, survol d'un élèment</h3>
+        <p id="paragrapheExo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ipsam!</p>
+
+    <!-- Exercice 3 -->
+        <h3> Exercice 3, préssion touche</h3>
+        <p> Appuyez sur la touche "Entrer"</p>
+        
+
+    <!-- Exercice 4 -->
+        <h3> Exercice 4, Bouton annlation</h3>
+        <label>
+            <input name="textExo4" id="textExo4" placeholder="Ecrivez quelque chose, puis appuyer sur le bouton annuler pour voir ce qu'il se passe"></input>
+        </label>
+        <br>
+        <button id="buttonCancel"> Annuler </button>
+        
+    <!-- Exercice 5 -->
+        <h3>Exercice 5,clic droit perso</h3>
+        <p id="rightClick"> le clic droit n'ouvre plus le menu contextuel </p>
+
+    <!-- Exercice 6 -->
+        <h3> Exercice 6, Modification de la selection</h3>
+        <input name="textExo6" id="textExo6"></input>
+
+    <!-- Exercice 7 -->
+        <h3> Exercice 7, Formulaire de confirmation</h3>
+        <form onsubmit="return false" id="formExo7">
+                <input type="text" id="textExo7"></input>
+                <input type="text" id="text2Exo7"></input>
+            </label>
+            <br>
+            <button type="submit" id="buttonSubmit"> confirmer </button>
+        </form>
+
+    <!-- Exercice 8 -->
+    <h3> Exercice 8, Focus et Blur</h3>
+    <textarea name="ChampTextExo8" id="ChampTextExo8" cols="30" rows="5"></textarea>
+
+    <!-- Exercice 9 -->
+    <h3> Exercice 9, changement de valeur dans la console</h3>
+    <textarea name="ChampTextExo9" id="ChampTextExo9" cols="30" rows="5"></textarea>
+
+    <!-- Exercice 10 -->
+    <h3> Exercice 10, bouton de toggle (Bascule)</h3>
+    <textarea name="ChampTextExo10" id="ChampTextExo10" cols="30" rows="5"></textarea>
+    <br>
+    <button id="toggleButton"> Basculer </button>
+
+<!-- PARTIE 8 -->
+    <!-- Exercice 1 -->
+        <h2> PARTIE 8 </h2>
+        <h3>Exercice 1</h3>
+        <p id="target-paragraph">" Le nouveau roi du dessin animé, c'est Bob. Et ça dure depuis 1999. Pour ceux qui
+            ont vécu dans une caverne sous-marine loin, très loin de la bonne ville de Bikini
+            Bottom, Bob est une joyeuse éponge de mer qui vit dans une jolie cité des profondeurs
+            de l'océan Pacifique et travaille comme cuisinier dans un snack aquatique."
+        </p>
+        <button id="Modif_Text">Modifier</button>
+        
+        <!-- Exercice 2 -->
+        <h3> Exercice 2</h3>
+        <button id="Modif_Span"> Modifier les spans</button>
+
+
+    <!-- Exercice 3 -->
+        <h3> Exercice 3</h3>
+        <ul id="listcontainer">
+            <li>Joyeux</li>
+            <li>Gentil</li>
+            <li>Altruiste</li>
+            <li>Marrant</li>
+            <li>Avanturier</li>
+        </ul>
+    </main>
+    <script src="le_DOM.js"></script>
+</body>
+</html>
